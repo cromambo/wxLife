@@ -66,7 +66,8 @@ private:
 	void ConfigureChoiceDropdowns();
 	//event IDs
 	enum { ID_Quit, ID_About, ID_Clear, ID_Bounded, ID_Resize,
-		ID_SpeedSlider, ID_ZoomSlider, ID_Advance, ID_Pause, ID_Explain, ID_Controls, ID_RuleChoice};
+		ID_SpeedSlider, ID_ZoomSlider, ID_Advance, 
+		ID_Pause, ID_Explain, ID_Controls, ID_RuleChoice};
 
 	//event handlers
 	void OnQuit(wxCommandEvent& event);
