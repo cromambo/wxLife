@@ -1,0 +1,29 @@
+
+Temporary (and easiest/fastest) solution is to disable manifest generation during development and enable it again in the release stage. Although this disables XP/Vista-style gui for the app (controls look like in "classic mode").
+
+
+
+
+do i have a race hazard between my two timers, one creates bitmap, other uses it to paint screen? or are the functions allowed to finish, if i do, i could lock the image and not paint it but that would delay the paint, or use a buffer bitmap (but then how do i know that isnt in the middle of beind drawn to?)
+
+advantages of static over paint:
+control object to capture the mouse - make it into just a panel and get all the same benefits cause panel and control are both windows
+
+paint over static:
+no flicker!
+
+statuc or paintdc:
+can do partial redraw or make it piecemeal either cause of blit bitmap to paint
+
+docapturemouse
+
+ 
+ status bar tooltip updates
+ 
+ change has to stay cause its needed for each calculation
+redraw has to be reset. why??????
+else each frame will redraw the changed ones even if its already done it
+
+redraw needs to be set on changed value or changed adjacent
+changed also needs to be ran on both of them
+ 
