@@ -1,5 +1,7 @@
 This program was made to learn wxWidgets and refresh my c++ knowledge. I was happy with my understanding of wxWidgets and the concept of the Game of Life, so I've moved on to try some other tech.
 
+As of my last time working on this in April 2013, the precompiled wx widgets binaries didnt support microsoft compiler vc110, so if you open this project in visual studio 2012 and convert its format, it won't work. I used visual studio express 2010 for development.
+
 Work that could still be done:
 Need a max size on resize bitmap else can overallocate on size, use all memory, and crash. Also it makes the program really slow.
 
