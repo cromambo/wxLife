@@ -3,6 +3,8 @@ This program was made to learn wxWidgets and refresh my c++ knowledge. I was hap
 Work that could still be done:
 Need a max size on resize bitmap else can overallocate on size, use all memory, and crash. Also it makes the program really slow.
 
+Might be able to redo the focus for widgets to not be valid focus targets so I don't have to set the focus to the board after I use said widgets.
+
 Add an interface that lets the user choose the behaviour for cell evolution. Right now it has some interesting presets, like the Conway pattern and the Maze pattern. This interface would be like 16 checkboxs in a grid, for 0 to 8 neighbors living and 0-8 neighbors dead, and the checkbox would be whether, in that state, the cell should be alive or dead after an evolution. Additionally, there could be a textbox or two that lets the user put in a notation for the rule. For example, the Conway notation is B3/S23, which means dead cells become alive (B = birth) with 3 living cells around them, and living cells stay alive (S = survive) with 2 or 3 living cells around them.
 
 Brush GUI for a 3x3 solid brush, 3x3 empty brush, or gliders for 4 different directions. Right now, shift+left click makes a glider that goes down and right. I put in a way to use the other brushes but there is no way to select which is used.
